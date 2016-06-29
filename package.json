@@ -1,0 +1,15 @@
+{
+  "name": "threatrebookingsystem",
+  "version": "1.0.0",
+  "description": "A threatre seat Booking system on Angular Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0",
+   }
+}

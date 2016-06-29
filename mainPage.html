@@ -1,0 +1,23 @@
+	<div  ng-controller="myCtrl">
+		<h1 class = "title"> 
+			<b>Book My Movie</b> 
+		</h1>
+		<h3 class = "title"> 
+			<i>Please Enter your name and the number of seats you want to reserve !!!</i>
+		</h3>
+		<div style = "margin:200px">
+
+			Name    <input type = "text" style = "height:30px;width:500px;margin:10px" ng-model="name" placeholder = "Enter the name"></input>
+			<br>
+			Seats   
+			<select style = "height:30px;width:500px;margin:10px" ng-model="seats" placeholder = "Select the no. of seats">
+				<option ng-repeat="option in options" value="{{option}}">Total Seats - {{option}}</option>
+			</select>
+			<br>
+			<a href="#/{{seats}}/{{name}}">
+				<button style = "margin-top:10px" >
+				Login</button>
+			</a>
+
+		</div>
+	</div>

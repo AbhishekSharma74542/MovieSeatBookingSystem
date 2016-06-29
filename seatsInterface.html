@@ -1,0 +1,32 @@
+	<div  ng-controller="seatsInterfaceCtrl">
+		<h1 class = "title">Movie Seat Reservation</h1>
+		Name :: {{name}}  Seats :: {{seats}}
+		<div class = "Issueblock" >
+			<div ng-repeat = "seatNumber in availableSeats" style = "float:left"> 
+
+				<button ng-click="seatNumber.isReserved == !seatNumber.isReserved;changeStatus(seatNumber);" ng-class="whatClassIsIt(seatNumber.isReserved)" 
+				style = "margin: 32px; border: brown; height:40px; width:50px" value = seatNumber>
+				{{seatNumber.id}}</button>
+			</div>	
+			<button ng-show="confirm" ng-click = "yesConfirm(seats,name)" class="confirm"
+			>Confirm</button>
+			<a href="#/">
+				<button ng-hide="confirm" class="confirm" 
+				>Back</button>
+			</a>
+
+			<div>
+				<table>
+					<tr>
+						<th>Firstname</th>
+						<th>Lastname</th>
+					</tr>
+					<tr ng-repeat = "user in userData">
+						<td>{{user.name}}</td>
+						<td>{{user.seats}}</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</div>
